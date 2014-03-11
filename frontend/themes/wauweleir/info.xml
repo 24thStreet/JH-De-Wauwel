@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>Wauweleir</name>
+	<version>0.1</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			"Wauweleir" is een thema speciaal gemaakt voor JH De Wauwel vzw uit Rijkevorsel
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>24th Street bvba</name>
+			<url>http://www.24street.be</url>
+		</author>
+		<author>
+			<name>Lorenz Adriaensen</name>
+			<url>http://www.ikbenlorenz.be</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+	    <template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+			</positions>
+			<format>
+				[main,main,main,main]
+			</format>
+		</template>
+	</templates>
+</theme>
+
+

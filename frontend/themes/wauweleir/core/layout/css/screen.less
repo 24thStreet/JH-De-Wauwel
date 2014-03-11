@@ -1,0 +1,405 @@
+@import "elements.less";
+@import "reset.less";
+
+//COLORS
+@blue: #343844;
+@green: #2AB69D;
+@red: #E65848;
+@yellow: #FDC536;
+@beige: #FCF2D7;
+
+//FONT
+@exo-light: 300;
+@exo-medium: 500;
+@exo-bold: 700;
+@exo-black: 800;
+
+//HELPERS
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+.margin-top-35 {
+	margin-top: 35px;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+.container-yellow {
+	background: @yellow!important;
+}
+
+.padding-bottom {
+	padding-bottom: 50px;
+}
+
+//STYLES
+body {
+	background: #fff url("../images/bg.png") no-repeat center top;
+	font-family: "Exo 2", sans-serif;
+}
+
+a {
+	font-size: 18px;
+	.transition();
+}
+
+a:link {
+	color:@blue;
+}
+
+a:visited {
+	color:@blue;
+}
+
+a:hover {
+	color:@blue;
+	.transition();
+}
+
+a:active {
+	color:@blue;
+}
+
+//CONTAINER
+
+.container {
+	background: fade(#fff, 90%);
+	height: 100%;
+	width: 980px;
+}
+
+//BUTTONS
+
+.btn-rect {
+	border: 0;
+	background: @red;
+	color: #fff;
+  	border-bottom: 6px solid @yellow;
+  	text-transform: uppercase;
+  	font-style: normal;
+  	font-weight: @exo-black;
+  	font-size: 18px;
+  	padding: 8px 20px;
+  	margin: 10px;
+
+  	.transition();
+
+  	i {
+  		.transition();
+  	}
+}
+
+.btn-rect:link {color:#fff;}
+.btn-rect:visited {color:#fff;}
+.btn-rect:hover {
+	text-decoration: none;
+	background: lighten(@red, 5%);
+  	.transition();
+
+  	i {
+  		margin-left: 10px;
+  		.transition();
+  	}
+
+}
+.btn-rect:active {color:#fff;}
+
+.no-margin-left {
+	margin-left: 0!important;
+}
+
+//SLIDER
+#slides {
+	height: 389px;
+
+	.caption {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		width: 40%;
+
+  		border-right: 6px solid @yellow;
+		background: fade(@red, 80%);
+
+		p {
+			font-size: 20px;
+			color: #fff;
+			font-weight: @exo-light;
+			font-style: italic;
+			padding: 10px 0 10px 20px;
+		}
+	}
+}
+
+//TEXT
+
+.text {
+	p {
+		font-weight: @exo-light;
+		font-style: italic;
+		color: @blue;
+		font-size: 16px;
+	}
+}
+
+//MENU
+.main-menu:before {
+    content:""; 
+    display:block; 
+    position:absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 6px;                          
+    background: @green;
+}
+
+.main-menu {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: @red;
+	position:relative; 
+  	border-bottom: 6px solid @yellow; 
+
+	ul {
+		clear: left;
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		left: 50%;
+		text-align: center;
+	}
+
+	li {
+		font-weight: @exo-black;
+		text-transform: uppercase;
+		font-size: 25px;
+		line-height: 60px;
+
+
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 0 25px;
+		position: relative;
+		right: 50%;
+
+		a {
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+
+	.selected {
+		a {
+			color: @yellow;
+			text-decoration: underline;
+		}
+	}
+}
+
+//BIG TITLE
+
+.big-title {
+	text-transform: uppercase;
+	color: @red;
+	border-bottom: 6px solid @yellow;
+	border-top: 6px solid @yellow; 
+	padding: 10px 0;
+	margin-bottom: 35px;
+	
+	background: #fff url("../images/title-bg.png") repeat-x 0 15px;
+
+	h1 {
+		font-weight: @exo-black;
+		margin: 0;
+		background: #fff;
+		display:inline-block;
+		padding: 0 10px;
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+.no-top-border {
+	border-top: 0;
+}
+
+//DATE
+
+.date {
+	background: @red;
+	color: #fff;
+	text-align: center;
+	width: 150px;
+
+	display: inline-block;
+	padding: 0 20px;
+	border-top: 6px solid @yellow;
+
+	h1 {
+		font-size: 90px;
+		line-height: 90px;
+		font-weight: @exo-black;
+		font-style: italic;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: @exo-black;
+		font-style: italic;
+	}
+}
+
+//EVENT
+
+.event {
+	margin-bottom: 35px;
+
+	h1 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	p {
+		font-size: 19px;
+		margin: 0;
+
+	}
+}
+
+//FORM
+
+.form {
+	label {
+		color: @red;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: @exo-black;
+	}
+
+	input, textarea {
+		background: @green;
+		color: #fff;
+		border: 0;
+		border-radius: 0;
+	}
+
+	::-webkit-input-placeholder {
+	   color: #fff;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #fff;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #fff;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: #fff;
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus,
+	button:focus {
+	    outline: none;
+	}
+}
+
+//FOOTER 
+
+.footer {
+	background: @yellow;
+	padding: 20px 0;
+
+	p {
+		color: #fff;
+		font-size: 16px;
+		font-weight: @exo-bold;
+	}
+	position: relative;
+}
+
+.footer-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	
+	a {
+		font-size: 16px;
+		color: #fff;
+		font-weight: @exo-medium;
+
+	}
+}
+
+//LOGO 24th STREET
+
+.logo24street {
+	position: absolute;
+	bottom: 20px;
+}
+
+//ICONS
+@font-face {
+	font-family: "Flaticon";
+	src: url("fonts/flaticon.eot");
+	src: url("fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("fonts/flaticon.woff") format("woff"),
+	url("fonts/flaticon.ttf") format("truetype"),
+	url("fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}.flaticon-arrow:before {
+	content: "\e000";
+}
+.flaticon-arrow487:before {
+	content: "\e001";
+}
+.flaticon-create1:before {
+	content: "\e002";
+}
+.flaticon-facebook6:before {
+	content: "\e003";
+}
+.flaticon-photo7:before {
+	content: "\e004";
+}
+.flaticon-pin8:before {
+	content: "\e005";
+}
+.flaticon-right20:before {
+	content: "\e006";
+}
+.flaticon-send5:before {
+	content: "\e007";
+}
+.flaticon-simple14:before {
+	content: "\e008";
+}
+.flaticon-weekly3:before {
+	content: "\e009";
+}

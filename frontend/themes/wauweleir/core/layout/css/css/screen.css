@@ -1,0 +1,334 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.center {
+  display: block;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.margin-top-35 {
+  margin-top: 35px;
+}
+.pull-right {
+  float: right;
+}
+.container-yellow {
+  background: #fdc536 !important;
+}
+.padding-bottom {
+  padding-bottom: 50px;
+}
+body {
+  background: #ffffff url("../images/bg.png") no-repeat center top;
+  font-family: "Exo 2", sans-serif;
+}
+a {
+  font-size: 18px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+a:link {
+  color: #343844;
+}
+a:visited {
+  color: #343844;
+}
+a:hover {
+  color: #343844;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+a:active {
+  color: #343844;
+}
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  width: 980px;
+}
+.btn-rect {
+  border: 0;
+  background: #e65848;
+  color: #fff;
+  border-bottom: 6px solid #fdc536;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-rect i {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-rect:link {
+  color: #fff;
+}
+.btn-rect:visited {
+  color: #fff;
+}
+.btn-rect:hover {
+  text-decoration: none;
+  background: #e96c5e;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-rect:hover i {
+  margin-left: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-rect:active {
+  color: #fff;
+}
+.no-margin-left {
+  margin-left: 0!important;
+}
+#slides {
+  height: 389px;
+}
+#slides .caption {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 40%;
+  border-right: 6px solid #fdc536;
+  background: rgba(230, 88, 72, 0.8);
+}
+#slides .caption p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  padding: 10px 0 10px 20px;
+}
+.text p {
+  font-weight: 300;
+  font-style: italic;
+  color: #343844;
+  font-size: 16px;
+}
+.main-menu:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background: #2ab69d;
+}
+.main-menu {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: #e65848;
+  position: relative;
+  border-bottom: 6px solid #fdc536;
+}
+.main-menu ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+.main-menu li {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 60px;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 25px;
+  position: relative;
+  right: 50%;
+}
+.main-menu li a {
+  color: #fff;
+  font-size: 20px;
+}
+.main-menu .active a {
+  color: #fdc536;
+  text-decoration: underline;
+}
+.big-title {
+  text-transform: uppercase;
+  color: #e65848;
+  border-bottom: 6px solid #fdc536;
+  border-top: 6px solid #fdc536;
+  padding: 10px 0;
+  background: #ffffff url("../images/title-bg.png") repeat-x 0 15px;
+}
+.big-title h1 {
+  font-weight: 800;
+  margin: 0;
+  background: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 30px;
+  line-height: 40px;
+}
+.no-top-border {
+  border-top: 0;
+}
+.date {
+  background: #e65848;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  padding: 0 20px;
+  border-top: 6px solid #fdc536;
+}
+.date h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 800;
+  font-style: italic;
+}
+.date p {
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+.event {
+  margin-bottom: 35px;
+}
+.event h1 {
+  font-size: 30px;
+  margin: 0;
+}
+.event p {
+  font-size: 19px;
+  margin: 0;
+}
+.form label {
+  color: #e65848;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+.form input,
+.form textarea {
+  background: #2ab69d;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+.form ::-webkit-input-placeholder {
+  color: #fff;
+}
+.form :-moz-placeholder {
+  /* Firefox 18- */
+
+  color: #fff;
+}
+.form ::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: #fff;
+}
+.form :-ms-input-placeholder {
+  color: #fff;
+}
+.form input:focus,
+.form select:focus,
+.form textarea:focus,
+.form button:focus {
+  outline: none;
+}
+.footer {
+  background: #fdc536;
+  padding: 20px 0;
+  position: relative;
+}
+.footer p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.footer-menu a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+.logo24street {
+  position: absolute;
+  bottom: 20px;
+}
+@font-face {
+  font-family: "Flaticon";
+  src: url("fonts/flaticon.eot");
+  src: url("fonts/flaticon.eot#iefix") format("embedded-opentype"), url("fonts/flaticon.woff") format("woff"), url("fonts/flaticon.ttf") format("truetype"), url("fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+}
+.flaticon-arrow:before {
+  content: "\e000";
+}
+.flaticon-arrow487:before {
+  content: "\e001";
+}
+.flaticon-create1:before {
+  content: "\e002";
+}
+.flaticon-facebook6:before {
+  content: "\e003";
+}
+.flaticon-photo7:before {
+  content: "\e004";
+}
+.flaticon-pin8:before {
+  content: "\e005";
+}
+.flaticon-right20:before {
+  content: "\e006";
+}
+.flaticon-send5:before {
+  content: "\e007";
+}
+.flaticon-simple14:before {
+  content: "\e008";
+}
+.flaticon-weekly3:before {
+  content: "\e009";
+}
